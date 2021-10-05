@@ -31,7 +31,11 @@ int main()
 
     cout << "Introdueix el factor de creixement dels conills:" << endl;
     cin >> fcc;
-
+    while (fcc <= 0)
+    {
+        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
+        cin >> fcc;
+    }
 }
 
 
