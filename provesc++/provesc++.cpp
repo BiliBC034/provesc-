@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    int c, g, gen, fcc, fcg, fmc, fmg, cg, gg, aug;
-
+    int c, g, gen, aug;
+    float fcc, fcg, fmc, fmg;
     cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
 	cin >> gen;
 	while (gen <= 0)
@@ -17,7 +17,7 @@ int main()
 
     cout << "Introdueix el nombre inicial de conills:" << endl;
     cin >> c;
-    while (g <= 0) {
+    while (c <= 0) {
         cout << "Error. Introdueix el nombre inicila de conills:" << endl;
         cin >> c;
     }
@@ -27,6 +27,14 @@ int main()
     while (g <= 0) {
         cout << "Error. Introdueix el nombre inicila de guineus:" << endl;
         cin >> g;
+    }
+
+    cout << "Introdueix el factor de creixement dels conills:" << endl;
+    cin >> fcc;
+    while (fcc <= 0)
+    {
+        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
+        cin >> fcc;
     }
 
     cout << "Introdueix el factor depredador guineu-conill:" << endl;
@@ -53,10 +61,19 @@ int main()
         cin >> fcg;
     }
 
-    for (int i = 1; c >= 1 && g >= 1 || i = gen; i++;)
+    aug = Aleatori(-2, 2);
+    switch (aug)
+    {
+    case -2: fmc = fmc + (fmc * (1 / 100)); break;
+    case -1: fmg = fmg + (fmg *( 1 / 100)); break;
+    case 1:fcg = fcg + (fcg * (1 / 100)); break;
+    case 2: fcc = fcc + (fcc * (1 / 100)); break;
+    default:
+        break;
+    }
 
-        cg = cg + (fcc * cg) - (fmc * cg * gg);
-        gg = gg - (fmg * cg) + (fcg * cg * gg);
+    c = c + (fcc * c) - (fmc * c * g);
+    g = g - (fmg * c) + (fcg * c* g);
 }
 
 
