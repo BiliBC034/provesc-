@@ -91,20 +91,6 @@ int main()
         cout << "tenim " << g << " guineus" << endl;
         cout << "tenim " << c << " conills" << endl;
     }
+
     cout << "Felicitats tens " << c << " conills i " << g << " guineus." << endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
