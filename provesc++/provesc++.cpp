@@ -53,11 +53,11 @@ int main()
         cin >> fmg;
     }
 
-    cout << "introdueix el factor de creixement de les guineus:" << endl;
+    cout << "Introdueix el factor de creixement de les guineus:" << endl;
     cin >> fcg;
     while (fcg<=0)
     {
-        cout << "Error. introdueix el factor de creixement de les guineus:" << endl;
+        cout << "Error. Introdueix el factor de creixement de les guineus:" << endl;
         cin >> fcg;
     }
 }
