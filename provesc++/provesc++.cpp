@@ -52,6 +52,14 @@ int main()
         cout << "Error. Introdueix el factor de mortalitat de les guineus:" << endl;
         cin >> fmg;
     }
+
+    cout << "introdueix el factor de creixement de les guineus:" << endl;
+    cin >> fcg;
+    while (fcg<=0)
+    {
+        cout << "Error. introdueix el factor de creixement de les guineus:" << endl;
+        cin >> fcg;
+    }
 }
 
 
