@@ -75,7 +75,23 @@ int main()
 
         c = c + (fcc * c) - (fmc * c * g);
         g = g - (fmg * c) + (fcg * c * g);
+
+        if (c <= 0) {
+            cout << "Ho sento, has fet fallida. No et queden conills" << endl;
+            return 1;
+        }
+        else {
+            if (g <= 0) {
+                cout << "Ho sento, has fet fallida. No et queden guineus" << endl;
+                return 1;
+            }
+        }
+
+        cout << "Hem estudiat " << i << " generacions i.." << endl;
+        cout << "tenim " << g << " guineus" << endl;
+        cout << "tenim " << c << " conills" << endl;
     }
+    cout << "Felicitats tens " << c << " conills i " << g << " guineus." << endl;
 }
 
 
