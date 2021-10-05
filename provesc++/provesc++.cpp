@@ -29,14 +29,6 @@ int main()
         cin >> g;
     }
 
-    cout << "Introdueix el factor de creixement dels conills:" << endl;
-    cin >> fcc;
-    while (fcc <= 0)
-    {
-        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
-        cin >> fcc;
-    }
-
     cout << "Introdueix el factor depredador guineu-conill:" << endl;
     cin >> fmc;
     while (fmc<=0)
