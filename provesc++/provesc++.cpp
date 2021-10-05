@@ -44,6 +44,14 @@ int main()
         cout << "Error. Introdueix el factor depredador guineu-conill:" << endl;
         cin >> fmc;
     }
+
+    cout << "Introdueix el factor de mortalitat de les guineus:" << endl;
+    cin >> fmg;
+    while (fmg<=0)
+    {
+        cout << "Error. Introdueix el factor de mortalitat de les guineus:" << endl;
+        cin >> fmg;
+    }
 }
 
 
