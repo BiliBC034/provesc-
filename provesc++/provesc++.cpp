@@ -14,6 +14,13 @@ int main(){
     cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
 	cin >> gen;
 	while (gen <= 0){
+int main()
+{
+    int c, g, gen, fcc, fcg, fmc, fmg;
+
+    cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
+	cin >> gen;
+	while (gen <= 0){
 		cout << "Introdueix un nombre enter positiu: quantes generacions vols estudiar?" << endl;
 		cin >> gen;
 	}
@@ -31,11 +38,24 @@ int main(){
         cout << "Error. Introdueix el nombre inicila de conills:" << endl;
         cin >> g;
     }
+    cout << "Introdueix el factor de creixement dels conills:" << endl;
+    cin >> fcc;
+    while (fcc <= 0)
+    {
+        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
+        cin >> fcc;
+    }
 
+    cout << "Introdueix el factor depredador guineu-conill:" << endl;
+    cin >> fmc;
+    while (fmc<=0)
+    {
+        cout << "Error. Introdueix el factor depredador guineu-conill:" << endl;
+        cin >> fmc;
+    }
 
-    cg = cg + fcc
-
-
+    cg = cg + (fcc * cg) - (fmc * cg * gg);
+    gg = gg - (fmg * cg) + (fcg * cg* gg);
 }
 
 
