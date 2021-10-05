@@ -61,19 +61,21 @@ int main()
         cin >> fcg;
     }
 
-    aug = Aleatori(-2, 2);
-    switch (aug)
-    {
-    case -2: fmc = fmc + (fmc * (1 / 100)); break;
-    case -1: fmg = fmg + (fmg *( 1 / 100)); break;
-    case 1:fcg = fcg + (fcg * (1 / 100)); break;
-    case 2: fcc = fcc + (fcc * (1 / 100)); break;
-    default:
-        break;
-    }
+    for (int i = 1; c >= 1 && g >= 1 || i = gen; i++;) {
+        aug = Aleatori(-2, 2);
+        switch (aug)
+        {
+        case -2: fmc = fmc + (fmc * (1 / 100)); break;
+        case -1: fmg = fmg + (fmg * (1 / 100)); break;
+        case 1:fcg = fcg + (fcg * (1 / 100)); break;
+        case 2: fcc = fcc + (fcc * (1 / 100)); break;
+        default:
+            break;
+        }
 
-    c = c + (fcc * c) - (fmc * c * g);
-    g = g - (fmg * c) + (fcg * c* g);
+        c = c + (fcc * c) - (fmc * c * g);
+        g = g - (fmg * c) + (fcg * c * g);
+    }
 }
 
 
