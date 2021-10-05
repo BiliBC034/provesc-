@@ -19,7 +19,6 @@ int main()
     cin >> c;
     while (g <= 0) {
         cout << "Error. Introdueix el nombre inicila de conills:" << endl;
-        cout << "Introdueix el nombre inicial de conills:" << endl;
         cin >> c;
     }
 
@@ -27,9 +26,12 @@ int main()
     cin >> g;
     while (g <= 0) {
         cout << "Error. Introdueix el nombre inicila de conills:" << endl;
-        cout << "Introdueix el nombre inicial de conills:" << endl;
         cin >> g;
     }
+
+    cout << "Introdueix el factor de creixement dels conills:" << endl;
+    cin >> fcc;
+
 }
 
 
