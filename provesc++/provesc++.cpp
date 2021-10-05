@@ -53,10 +53,10 @@ int main()
         cin >> fcg;
     }
 
-    
+    for (int i = 1; c >= 1 && g >= 1 || i = gen; i++;)
 
-    cg = cg + (fcc * cg) - (fmc * cg * gg);
-    gg = gg - (fmg * cg) + (fcg * cg* gg);
+        cg = cg + (fcc * cg) - (fmc * cg * gg);
+        gg = gg - (fmg * cg) + (fcg * cg * gg);
 }
 
 
