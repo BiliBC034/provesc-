@@ -3,31 +3,14 @@
 
 using namespace std;
 
-int main(){
-    int c, g;
-    int gen;
-	cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
-	cin >> gen;
-	while (gen <= 0){
-        int c, g, gen, fcc, fcg, fmc, fmg, cg, gg;
-
-    cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
-	cin >> gen;
-	while (gen <= 0){
 int main()
 {
-    int c, g, gen, fcc, fcg, fmc, fmg;
+    int c, g, gen, fcc, fcg, fmc, fmg, cg, gg;
 
     cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
 	cin >> gen;
 	while (gen <= 0)
 	{
-		cout << "Introdueix un nombre enter positiu: quantes generacions vols estudiar?" << endl;
-		cin >> gen;
-	}
-    cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
-	cin >> gen;
-	while (gen <= 0){
 		cout << "Introdueix un nombre enter positiu: quantes generacions vols estudiar?" << endl;
 		cin >> gen;
 	}
@@ -42,15 +25,8 @@ int main()
     cout << "Introdueix el nombre inicial de guineus:" << endl;
     cin >> g;
     while (g <= 0) {
-        cout << "Error. Introdueix el nombre inicila de conills:" << endl;
+        cout << "Error. Introdueix el nombre inicila de guineus:" << endl;
         cin >> g;
-    }
-    cout << "Introdueix el factor de creixement dels conills:" << endl;
-    cin >> fcc;
-    while (fcc <= 0)
-    {
-        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
-        cin >> fcc;
     }
 
     cout << "Introdueix el factor de creixement dels conills:" << endl;
@@ -77,19 +53,12 @@ int main()
         cin >> fmg;
     }
 
-    cout << "introdueix el factor de creixement de les guineus:" << endl;
+    cout << "Introdueix el factor de creixement de les guineus:" << endl;
     cin >> fcg;
     while (fcg<=0)
     {
-        cout << "Error. introdueix el factor de creixement de les guineus:" << endl;
+        cout << "Error. Introdueix el factor de creixement de les guineus:" << endl;
         cin >> fcg;
-    }
-    cout << "Introdueix el factor depredador guineu-conill:" << endl;
-    cin >> fmc;
-    while (fmc<=0)
-    {
-        cout << "Error. Introdueix el factor depredador guineu-conill:" << endl;
-        cin >> fmc;
     }
 
     cg = cg + (fcc * cg) - (fmc * cg * gg);
