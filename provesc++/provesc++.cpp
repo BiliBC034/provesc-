@@ -74,7 +74,7 @@ int main()
 
     c = c + (fcc * c) - (fmc * c * g);
     g = g - (fmg * c) + (fcg * c* g);
-
+    //s
 }
 
 
