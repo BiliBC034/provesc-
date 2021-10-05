@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    int c, g, gen, fcc, fcg, fmc, fmg, cg, gg;
-
+    int c, g, gen, cg, gg, aug;
+    float fcc, fcg, fmc, fmg;
     cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
 	cin >> gen;
 	while (gen <= 0)
@@ -71,6 +71,16 @@ int main()
     {
         cout << "Error. Introdueix el factor depredador guineu-conill:" << endl;
         cin >> fmc;
+    }
+    aug = Aleatori(-2, 2);
+    switch (aug)
+    {
+    case -2: fmc = fmc + (fmc * (1 / 100)); break;
+    case -1: fmg = fmg + (fmg *( 1 / 100)); break;
+    case 1:fcg = fcg + (fcg * (1 / 100)); break;
+    case 2: fcc = fcc + (fcc * (1 / 100)); break;
+    default:
+        break;
     }
 
     cg = cg + (fcc * cg) - (fmc * cg * gg);
