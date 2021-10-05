@@ -71,7 +71,7 @@ int main()
     default:
         break;
     }
-    //holi
+
     c = c + (fcc * c) - (fmc * c * g);
     g = g - (fmg * c) + (fcg * c* g);
 }
