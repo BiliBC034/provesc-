@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Aleatori.cpp" />
     <ClCompile Include="provesc++.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aleatori.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
