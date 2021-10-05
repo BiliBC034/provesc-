@@ -14,12 +14,6 @@ int main()
 		cout << "Introdueix un nombre enter positiu: quantes generacions vols estudiar?" << endl;
 		cin >> gen;
 	}
-    cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
-	cin >> gen;
-	while (gen <= 0){
-		cout << "Introdueix un nombre enter positiu: quantes generacions vols estudiar?" << endl;
-		cin >> gen;
-	}
 
     cout << "Introdueix el nombre inicial de conills:" << endl;
     cin >> c;
@@ -31,15 +25,8 @@ int main()
     cout << "Introdueix el nombre inicial de guineus:" << endl;
     cin >> g;
     while (g <= 0) {
-        cout << "Error. Introdueix el nombre inicila de conills:" << endl;
+        cout << "Error. Introdueix el nombre inicila de guineus:" << endl;
         cin >> g;
-    }
-    cout << "Introdueix el factor de creixement dels conills:" << endl;
-    cin >> fcc;
-    while (fcc <= 0)
-    {
-        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
-        cin >> fcc;
     }
 
     cout << "Introdueix el factor depredador guineu-conill:" << endl;
