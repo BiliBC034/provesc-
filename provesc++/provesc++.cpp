@@ -11,6 +11,3 @@ int main()
 		cout "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
 	}
 }
-
-
-a
